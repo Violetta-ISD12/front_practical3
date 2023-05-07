@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>JS Challenge: DOM, CONDITIONALS, LOGIC</title>
+    <script>
+      function checkInput() {
+        
+        var input = document.getElementById("inputField").value;
+        
+        if (input.trim() === "") {
+          
+          alert("Поле ввода не должно быть пустым!");
+        } else if (input.includes("hello")) {
+          
+          document.body.style.backgroundColor = "A0D8B3";
+        } else if (input.includes("world")) {
+          
+          document.body.style.backgroundColor = "0C134F";
+        } else {
+          
+          document.body.style.backgroundColor = "D21312";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="inputField">
+    <button onclick="checkInput()">Check Text</button>
+  </body>
+</html>
